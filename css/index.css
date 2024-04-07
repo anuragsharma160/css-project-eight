@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-image: url(../images/backcover.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding: 2rem 10rem;
+  height: 100vh;
+}
+
+.main-div{
+  height: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    font-family: "roboto";
+    color: #05017a;
+}
+
+.signin-btn{
+  background: linear-gradient(to right, #a300ef, #e785dd);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: unset;
+  border-radius: 2rem;
+  width: 8rem;
+}
+
+.imgs-div{
+  height: 100%;
+  position: relative;
+}
+
+img[src="./images/intro-img.svg"]{
+    width: 100%;
+    z-index: -1;
+}
+
+.intro-section{
+  display: flex;
+  height: 100%;
+}
+
+.left-section{
+  font-family: "roboto";
+  height: 100%;
+}
+
+.left-section h1{
+  font-size: 5rem;
+  color: #000087de;
+  font-family: "roboto";
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.left-section h4{
+  font-size: 1.3rem;
+  width: 25%;
+  margin-bottom: 5%;
+  color: #765498;
+}
+
+.left-section .learn-more-btn{
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: unset;
+  background: linear-gradient(to right, #a300ef, #e785dd);
+  color: #ffffff;
+  width: 18rem;
+  font-weight: 700;
+  font-size: large;
+}
+
+img[src="./images/vector-dot.svg"]{
+  z-index: 2;
+  position: absolute;
+  width: 4%;
+  margin-left: 8%;
+  margin-top: 70%;
+}
+
+img[src="./images/vector.svg"]{
+  z-index: 1;
+  position: absolute;
+  margin-top: 70%;
+  width: 15%;
+}
+
+@media screen and (max-width:480px){
+  body{
+    padding: 1rem 0.5rem;
+    background-size: 80%;
+    /* background-size: 100%; */
+  }
+
+  nav{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav-items{
+    width: 100%;
+    font-size: 1.3rem;
+    justify-content: space-between;
+  }
+
+  img[src="./images/logo.svg"]{
+    width: 80px;
+  }
+
+  .intro-section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section{
+    order: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+  }
+
+  .left-section h1{
+    font-size: 2rem;
+  }
+
+  .imgs-div{
+    height: auto;
+  }
+
+  .left-section h4{
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .left-section .learn-more-btn{
+    padding: 1rem 2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  img[src="./images/intro-img.svg"]{
+    width: 80%;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+  img[src="./images/vector-dot.svg"]{
+  margin-top: 60%;
+  margin-left: 28%;
+}
+
+  img[src="./images/vector.svg"]{
+  margin-top: 58%;
+  margin-left: 20%;
+}
+}
+
+@media screen and (min-width:481px) and (max-width:968px){
+  body{
+    padding: 1rem;
+    background-size: 60%;
+  }
+  img[src="./images/logo.svg"]{
+    width: 100px;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+  }
+
+  .nav-items{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .left-section h1{
+    font-size: 3rem;
+  }
+
+  img[src="./images/intro-img.svg"]{
+    width: 100%;
+    z-index: -1;
+}
+}
